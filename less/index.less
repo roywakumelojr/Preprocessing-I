@@ -194,6 +194,7 @@ table {
 		transform: scale(1.05);
 		background-color: @main-color;
 		padding: 20px;
+		color: black;
 		border: 1px solid @second-color;
 	}
 
@@ -206,13 +207,15 @@ table {
 		width:50%;
 		padding: 0 2%;
 		padding-bottom: 25px;
-		border: 1px solid @second-color;
+		border: 1px solid @second-color;	
+	}
 
-			@media( max-width: 500px ) {
-				flex-direction: column;
-				align-items: center;
-			}
-			
+	img {
+		display: flex;
+		align-items: center;
+		width: 80px;
+		height: 80px;
+
 	}
 }
 .title {
@@ -234,4 +237,19 @@ footer {
 	.footer();
 }
 
+/********************** MEDIA QUERIES ***************************/
+@media screen and (max-width: 500px){
+	.text-container{
+        display:flex;
+        flex-direction:column;
+		align-items:center;
+		width: 80%;
+    }
+	.title {
+        display:flex;
+        flex-direction:column;
+		align-items:center;
+		width: 80%;
+	}	
+}
 

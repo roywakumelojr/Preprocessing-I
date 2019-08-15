@@ -243,6 +243,7 @@ h4 {
   transform: scale(1.05);
   background-color: antiquewhite;
   padding: 20px;
+  color: black;
   border: 1px solid darkslategray;
 }
 @media (max-width: 500px) {
@@ -257,11 +258,11 @@ h4 {
   padding-bottom: 25px;
   border: 1px solid darkslategray;
 }
-@media (max-width: 500px) {
-  .top-content .text-container {
-    flex-direction: column;
-    align-items: center;
-  }
+.top-content img {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 80px;
 }
 .title {
   padding-top: 30px;
@@ -285,4 +286,19 @@ footer {
 }
 footer p {
   color: white;
+}
+/********************** MEDIA QUERIES ***************************/
+@media screen and (max-width: 500px) {
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
 }
