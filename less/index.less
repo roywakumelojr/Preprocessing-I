@@ -189,6 +189,14 @@ table {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	margin-bottom: 20px;
+
+	:hover {
+		transform: scale(1.05);
+		background-color: @main-color;
+		padding: 20px;
+		border: 1px solid @second-color;
+	}
+
 		@media( max-width: 500px ) {
 			flex-direction: column;
 			align-items: center;
@@ -204,6 +212,7 @@ table {
 				flex-direction: column;
 				align-items: center;
 			}
+			
 	}
 }
 .title {
